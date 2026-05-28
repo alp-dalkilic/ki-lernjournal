@@ -23,4 +23,4 @@ def Uebung_3(): #Gerade/Ungerade
         print('Ungerade')
 
 
-Uebung_3()
+Uebung_2()
