@@ -1,0 +1,4 @@
+2026-06-03 16:16:06,426 - DEBUG - Start of the program
+2026-06-03 16:16:11,177 - DEBUG - Let us see the guess: tails
+2026-06-03 16:16:11,177 - DEBUG - Let us see the random guess: tails the guess: tails
+2026-06-03 16:16:11,177 - DEBUG - What are the values of toss: tails guess: tails
