@@ -39,9 +39,9 @@ Mein erstes Projekt vom Rohdatensatz bis zur Bewertung. Es ist ein **Lernprojekt
 - Der Datensatz enthält nur vergebene Kredite. Merkmale wie „kein Girokonto" wirken deshalb sicher, weil solche Kunden damals streng geprüft wurden. Das Modell beschreibt die alte Kreditpolitik, nicht das Risiko des Merkmals.
 - Eine Trefferquote sagt wenig, solange man sie nicht in Euro übersetzt und gegen „alle genehmigen" stellt.
 
-**Grenzen:** Der Datensatz ist nicht repräsentativ (30 % Ausfälle), die Wahrscheinlichkeiten sind nicht kalibriert, der Testteil ist klein, und eine Prüfung auf Benachteiligung einzelner Gruppen hat nicht stattgefunden.
+**Grenzen:** Der Datensatz ist nicht repräsentativ (30 % Ausfälle), die Wahrscheinlichkeiten sind nur innerhalb des Datensatzes kalibriert und lassen sich nicht direkt auf ein Portfolio mit niedrigerer Ausfallquote übertragen, der Testteil ist klein, und eine Prüfung auf Benachteiligung einzelner Gruppen hat nicht stattgefunden.
 
-**Regulatorische Einordnung:** Bei einem Einsatz in der Kreditvergabe an Privatkunden wäre ein solches Modell ein Hochrisiko-KI-System nach der KI-Verordnung der EU (Anhang III Nummer 5 Buchstabe b). Für ein Lernprojekt gelten diese Pflichten nicht; die Lücken zu den dort verlangten Anforderungen dokumentiere ich in einer Model Card, die hier ergänzt wird.
+**Regulatorische Einordnung:** Bei einem Einsatz in der Kreditvergabe an Privatkunden wäre ein solches Modell ein Hochrisiko-KI-System nach der KI-Verordnung der EU (Anhang III Nummer 5 Buchstabe b). Für ein Lernprojekt gelten diese Pflichten nicht; die Lücken zu den dort verlangten Anforderungen stehen in der [Model Card](./MODEL_CARD.md), Abschnitt 8.
 
 **Dateien:** [`notebooks/credid_scoring_v1.ipynb`](./notebooks/credid_scoring_v1.ipynb) (Daten, Vorverarbeitung, beide Regressionen, Bewertung) · [`notebooks/NN_exercise.ipynb`](./notebooks/NN_exercise.ipynb) (neuronales Netz) · [`requirements.txt`](./requirements.txt). Die Aufteilung nutzt `random_state=42`, das Netz den Seed 42.
 
